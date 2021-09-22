@@ -269,13 +269,14 @@ let sampleArray = [0,1,2,3,4,7,5,6,8,9]
 function fifteen(array){
   for (let i = 0; i < array.length; i++){
     if(array[i] < array[i + 1]){
-      return console.log(true)
+      return true
     } else {
-      return console.log(false)
+      return false
     }
   }
 }
-fifteen(sampleArray)
+let arrayIsAscending = fifteen(sampleArray)
+console.log(arrayIsAscending)
 ////////////////// PROBLEM 16 ////////////////////
 
 let duck = "cute";
