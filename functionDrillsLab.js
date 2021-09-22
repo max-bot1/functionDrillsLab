@@ -254,16 +254,28 @@ let sampleArray = [0,1,2,3,4,7,5,6,8,9]
 */
 
 //CODE HERE
+//If they want it to be consecutive use this one
+// function fifteen(array){
+//   for (let i = 0; i < array.length; i++){
+//     if(array[i] === array[i + 1] - 1){
+//       return console.log(true)
+//     } else {
+//       return console.log(false)
+//     }
+//   }
+// }
+
+//Otherwise use this one
 function fifteen(array){
   for (let i = 0; i < array.length; i++){
-    if(array[i] === array[i + 1] - 1){
+    if(array[i] < array[i + 1]){
       return console.log(true)
     } else {
       return console.log(false)
     }
   }
 }
-// fifteen(sampleArray)
+fifteen(sampleArray)
 ////////////////// PROBLEM 16 ////////////////////
 
 let duck = "cute";
